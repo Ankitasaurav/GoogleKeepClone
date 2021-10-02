@@ -1,0 +1,125 @@
+/* Heading  */
+body {
+    font-family: poppins;
+    margin: 0;
+    background-color: rgb(238, 238, 238);
+  }
+
+  .heading {
+    background-color: rgb(83, 72, 122);
+    padding: 0.8em;
+    color: rgb(255, 229, 115);
+  }
+
+  .fa-sticky-note {
+    padding: 0.4em;
+  }
+
+  /* Add note Btn */
+  .add-notes {
+    width: 14em;
+    height: 4em;
+    border-radius: 6px;
+    font-size: .9rem;
+    border: none;
+    background-color: rgb(83, 72, 122);
+    color: white;
+    padding: .4em;
+    margin: 2em;
+    transition: 0.3s;
+  }
+
+  .add-notes:hover {
+    background-color: rgb(38, 33, 56);
+    box-shadow: 0 8px 16px 0 rgba(109, 109, 109, 0.192), 0 6px 20px 0 rgba(107, 107, 107, 0.151);
+    transform: scale(1.04);
+  }
+
+  /* Note box */
+  .note {
+    background-color: rgb(255, 255, 255);
+    margin: 1em 1.5em;
+    padding: 0.8em;
+    height: 10em;
+    width: 21em;
+    overflow-y: scroll;
+    display: inline-block;
+  }
+
+  textarea {
+    margin: 1em 0em;
+    padding: 0.8em;
+    height: 40em;
+    width: 21em;
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    border: none;
+    outline: none;
+  }
+
+  .operation {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .edit {
+    background-color: rgb(255, 229, 115);
+    border: none;
+    padding: 0.4em;
+    margin-right: 0.3em;
+    color: rgb(61, 54, 88);
+    width: 1.6rem;
+    border-radius: 3px;
+    transition: 0.4s;
+  }
+  
+  .delete {
+    background-color: rgb(255, 229, 115);
+    border: none;
+    padding: 0.4em;
+    color: rgb(61, 54, 88);
+    width: 1.6rem;
+    border-radius: 3px;
+  }
+
+  .edit:hover {
+    background-color: rgb(255, 219, 60);
+    box-shadow: 0 8px 16px 0 rgba(109, 109, 109, 0.192),
+      0 6px 20px 0 rgba(107, 107, 107, 0.151);
+    transform: scale(1.04);
+  }
+
+  .delete:hover {
+    background-color: rgb(255, 219, 60);
+    box-shadow: 0 8px 16px 0 rgba(243, 243, 243, 0.192),
+      0 6px 20px 0 rgba(107, 107, 107, 0.151);
+    transform: scale(1.04);
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .main {
+    margin-top: 0.5em;
+    overflow: hidden;
+  }
+
+  @media (max-width: 390px) {
+    .note {
+      margin: 1em 1em;
+      height: 10em;
+      width: 16em;
+    }
+    textarea {
+    width: 17em;
+  }
+  }  
+
+  @media (max-width: 300px) {
+    .note {
+      width: 14em;
+    }
+    textarea {
+    width: 14em;
+  }
+  }    
